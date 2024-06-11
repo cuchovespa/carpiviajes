@@ -1,0 +1,108 @@
+/* Importa tipo de letra */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600;800&display=swap');
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+}
+
+header {
+    background-color: #d145b3;
+    display: flex;
+    /* gap y grid-gap son lo mismo, crean espacio entre los elementos (usar los 2) */
+    gap: 20px;
+    grid-gap: 20px; 
+}
+
+/* Tamaño del logo -paloma- */
+.logo {
+    width: 100px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    grid-gap: 10px;
+    align-items: center;
+}
+.menu__item a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.menu__item.active a {
+    text-decoration: underline double;
+}
+
+.imagenPrincipal {
+    height: 80vh;
+    background-image: url("../img/paisaje.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 250px;
+}
+
+.imagenPrincipal h2 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-inline: 15px;
+}
+
+.imagenPrincipal p {
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.tarjetitas {
+    padding: 60px;
+    display: flex;
+    gap: 30px;
+}
+
+.tarjetita {
+    background-color: #d145b3;
+    width: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.informacion {
+    padding: 0 20px 20px 20px;
+}
+
+.tarjetita__imagen {
+    max-width: 100%;
+}
+
+.pie {
+    background-color: #d145b3;
+    color: white;
+    padding-block: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.tarjetitados {
+    flex: 1.5;
+}
